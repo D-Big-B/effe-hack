@@ -1,129 +1,139 @@
-/*=======> GOOGLE FONTS <=======*/
+/*=============== GOOGLE FONTS ===============*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
-
-/*=======> VARIABLES <=======*/
+/*=============== VARIABLES CSS ===============*/
 :root {
-  /*=======> Color Variables <=======*/
-  --body-color: #e9edfb;
-  --text-color: #2a314e;
-  --white: #fff;
-
-  /*=======> typography <=======*/
+  /*========== Colors ==========*/
+  --hue-color: 225;
+  --first-color: hsl(var(--hue-color), 48%, 35%);
+  --title-color: #ffffff;
+  --text-color: #ffffff;
+  --body-color: hsl(var(--hue-color), 49%, 98%);
+  --container-color: #fff;
+  /*========== Font and typography ==========*/
   --body-font: "Poppins", sans-serif;
-  --big-font: 0.949rem;
-  --medium-font: 0.844rem;
-  --small-font: 0.75rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smaller-font-size: 0.75rem;
 }
 
-/*=======> RESIZE FONT - DESKTOP <=======*/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 968px) {
   :root {
-    /*=======> typography <=======*/
-    --big-font: 1.201rem;
-    --medium-font: 1.068rem;
-    --small-font: 0.949rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+    --smaller-font-size: 0.813rem;
   }
 }
 
-/*=======> LAYOUT <=======*/
+/*=============== BASE ===============*/
+
+/*=============== LAYOUT ===============*/
+/* .container {
+  max-width: 968px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+} */
+
+/*=============== ACCORDION ===============*/
+
 .accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
-  min-width: 300px;
-  padding: 2rem 0;
-  display: grid;
-  place-items: center;
 }
 
-.accordion__content {
-  min-width: 300px;
-  width: 70%;
-  padding: 2rem;
-  background: #ffc23c;
-  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.25);
-  border-radius: 8px;
+.accordion__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffc23c;
+  border-radius: 0.5rem;
+  box-shadow: 0 12px 32px rgba(51, 51, 51, 0.1);
+  margin: 5px;
+}
+
+.accordion__header {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  cursor: pointer;
+  line-height: 1rem;
+}
+
+.accordion__icon {
+  font-size: 1.5rem;
+  height: max-content;
+  color: var(--title-color);
+  transition: 0.3s;
 }
 
 .accordion__title {
-  font-size: 64px;
-  text-shadow: 2px 0px 2px white;
-  text-align: center;
-  margin: 3rem 1rem;
+  font-size: var(--small-font-size);
+  color: var(--title-color);
+  font-weight: 400;
+  margin-left: 1rem;
+  transition: 0.2s;
 }
 
 .accordion__item {
-  border-radius: 6px;
-  margin-top: 8px;
+  box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
   background-color: #070707;
-  border-left: 4px solid #ffffff;
+  border-radius: 0.25rem;
+  position: relative;
+  transition: all 0.25s ease;
+  border-left: 4px solid white;
+  margin: 1rem;
+  border-radius: 10px;
 }
 
-.item__header {
-  display: flex;
-  column-gap: 12px;
-  align-items: center;
-  padding: 1.25rem;
-  cursor: pointer;
-}
-
-.item__icon {
-  font-size: 1.5rem;
-  transition: all 0.25s cubic-bezier(0.5, 0, 0.1, 1);
-}
-
-.item__question {
-  font-size: var(--medium-font);
-  line-height: 150%;
-  font-weight: 400;
-}
-
-.active .item__icon {
-  transform: rotate(180deg);
-}
-
-.active .item__question {
-  font-weight: 500;
-}
-
-/*=======> items color <=======*/
-
-.item__content {
-  max-height: 0;
+.accordion__content {
   overflow: hidden;
-  transition: all 300ms ease;
+  height: 0;
+  transition: all 0.25s ease;
 }
 
-.item__answer {
-  line-height: 150%;
-  padding: 0 3.5rem;
+.accordion__description {
+  padding: 0 1.25rem 1.25rem 3rem;
+  font-size: var(--smaller-font-size);
+  line-height: 1.2rem;
+  letter-spacing: 1px;
+  width: 80%;
 }
 
-p ~ p {
-  margin-top: 0.5rem;
+/*Rotate icon and add font weight to titles*/
+.accordion-open .accordion__icon {
+  transform: rotate(45deg);
 }
 
-.item__content :last-child {
-  margin-bottom: 1.25rem;
+.accordion-open .accordion__title {
+  font-weight: 600;
 }
 
-/*=======> MEDIAS QUERIES <=======*/
-@media screen and (min-width: 992px) {
-  .container {
-    margin: 0 auto;
+/*=============== MEDIA QUERIES ===============*/
+/* For medium devices */
+@media screen and (min-width: 576px) {
+  .accordion__container {
+    width: 65%;
+    padding: 2.5rem;
+    justify-self: center;
+    border-radius: 0.75rem;
   }
-
-  .item__header {
+  .accordion__header {
     padding: 1.5rem;
-    column-gap: 1.5rem;
   }
+  .accordion__title {
+    padding-right: 3.5rem;
+  }
+  .accordion__description {
+    padding: 0 4rem 1.25rem 3.5rem;
+  }
+}
 
-  .item__answer {
-    padding: 0 4.5rem;
-  }
-  p ~ p {
-    margin-top: 0.5rem;
-  }
-
-  .item__content :last-child {
-    margin-bottom: 1.5rem;
+/* For large devices */
+@media screen and (min-width: 968px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

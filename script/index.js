@@ -1,31 +1,37 @@
-//selecionar todas as perguntas
-const questions = document.querySelectorAll(".item__header");
+/*=============== ACCORDION ===============*/
+const accordionItems = document.querySelectorAll(".accordion__item");
 
-// percorrer cada uma das perguntas e adicionar um evento de clique
-questions.forEach((question) => {
-  question.addEventListener("click", function () {
-    // verificar se tem alguma pergunta aberta
-    let openQuestion = document.querySelector(".item__header.active");
+// 1. Selecionar cada item
+accordionItems.forEach((item) => {
+  const accordionHeader = item.querySelector(".accordion__header");
 
-    // se existir alguma pergunta aberta
-    // e ela for diferente da atual então feche
-    if (openQuestion && openQuestion !== this) {
-      setAnswer(openQuestion);
+  // 2. Seleccionar cada click del header
+  accordionHeader.addEventListener("click", () => {
+    // 7. Crear la variable
+    const openItem = document.querySelector(".accordion-open");
+
+    // 5. Llamar a la funcion toggle item
+    toggleItem(item);
+
+    // 8. Validar si existe la clase
+    if (openItem && openItem !== item) {
+      toggleItem(openItem);
     }
-
-    // abrir ou fechar a resposta
-    setAnswer(question);
   });
 });
 
-function setAnswer(question) {
-  // adicionar ou remover a classe active da pergunta
-  question.classList.toggle("active");
+// 3. Crear una funcion tipo constante
+const toggleItem = (item) => {
+  // 3.1 Crear la variable
+  const accordionContent = item.querySelector(".accordion__content");
 
-  // recuperar a resposta
-  let answer = question.nextElementSibling;
-
-  // se a resposta estiver aberta então feche
-  if (answer.style.maxHeight) answer.style.maxHeight = null;
-  else answer.style.maxHeight = answer.scrollHeight + "px";
-}
+  // 6. Si existe otro elemento que contenga la clase accorion-open que remueva su clase
+  if (item.classList.contains("accordion-open")) {
+    accordionContent.removeAttribute("style");
+    item.classList.remove("accordion-open");
+  } else {
+    // 4. Agregar el height maximo del content
+    accordionContent.style.height = accordionContent.scrollHeight + "px";
+    item.classList.add("accordion-open");
+  }
+};

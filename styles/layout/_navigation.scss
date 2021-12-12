@@ -23,11 +23,11 @@
 
     &__navlinks {
       display: flex;
-      padding-top: 2rem;
+      padding: 2rem 0rem;
       flex-direction: column;
       justify-content: space-around;
       align-items: center;
-      height: 100vh;
+      height: 95vh;
       overflow: hidden;
       background: $secondary-color;
       transform: translateY(-100%);

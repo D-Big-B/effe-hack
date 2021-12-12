@@ -1,4 +1,4 @@
-const accordionContainer = document.querySelector(".accordion__content");
+const accordionContainer = document.querySelector(".accordion__container");
 
 const faqs = [
   {
@@ -36,17 +36,18 @@ const faqs = [
 
 for (const faq of faqs) {
   accordionContainer.innerHTML += `
-    <div class="accordion__item">
-  <header class="item__header">
-    <i class="bx bx-chevron-down item__icon" ></i>
-    <h4 class="item__question">${faq.question}</h4>
-  </header>
-  <div class="item__content">
-    <p class="item__answer">
-      ${faq.answer}
-    </p>
-  </div>
-</div>
+     <div class="accordion__item">
+            <header class="accordion__header">
+              <i class="bx bx-plus accordion__icon"></i>
+              <h3 class="accordion__title">${faq.question}</h3>
+            </header>
 
-    `;
+            <div class="accordion__content">
+              <p class="accordion__description">
+                ${faq.answer}
+              </p>
+            </div>
+          </div>
+
+     `;
 }
