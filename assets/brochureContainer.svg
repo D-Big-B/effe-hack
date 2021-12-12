@@ -1,0 +1,19 @@
+<svg width="1301" height="200" viewBox="0 0 1301 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Frame 37258" clip-path="url(#clip0_451_404)">
+<g id="Ellipse 3201">
+<circle cx="95.5513" cy="100.408" r="89.1069" transform="rotate(90 95.5513 100.408)" fill="#FFB645"/>
+<circle cx="95.5513" cy="100.408" r="89.1069" transform="rotate(90 95.5513 100.408)" fill="url(#paint0_linear_451_404)"/>
+</g>
+<circle id="Ellipse 3202" cx="95.9558" cy="99.9998" r="94.0476" transform="rotate(90 95.9558 99.9998)" stroke="white" stroke-width="2.38095" stroke-dasharray="4.76 4.76"/>
+<path id="Subtract" d="M1447.78 200V3.06951e-05L95.5596 0C150.788 2.74267e-05 195.559 44.7715 195.559 100C195.559 155.191 150.848 199.94 95.671 200L1447.78 200Z" fill="#444444"/>
+</g>
+<defs>
+<linearGradient id="paint0_linear_451_404" x1="95.5513" y1="11.3008" x2="95.5513" y2="189.515" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFB347"/>
+<stop offset="1" stop-color="#FFCC33"/>
+</linearGradient>
+<clipPath id="clip0_451_404">
+<rect width="1300" height="200" fill="white" transform="translate(0.718262)"/>
+</clipPath>
+</defs>
+</svg>
