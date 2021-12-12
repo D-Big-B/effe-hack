@@ -1,0 +1,70 @@
+.sponsors {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  overflow-x: hidden;
+
+  &__heading {
+    @include heading;
+    margin: 2rem;
+  }
+
+  &__title {
+    width: 40%;
+    position: relative;
+    margin-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    min-width: 280px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  &__sponsor {
+    width: 90%;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .fline {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      img {
+        margin: 2rem 1rem;
+
+        min-width: 220px;
+      }
+    }
+    .sline {
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      img {
+        margin: 2rem 1rem;
+
+        min-width: 220px;
+      }
+    }
+    .tline {
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      img {
+        margin: 2rem 1rem;
+        min-width: 220px;
+      }
+    }
+  }
+}

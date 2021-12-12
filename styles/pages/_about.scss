@@ -1,0 +1,69 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__heading {
+    @include heading;
+  }
+
+  &__body {
+    color: $accent-color;
+    font-size: 1rem;
+    min-width: 250px;
+    width: 60%;
+    margin-top: 2rem;
+    line-height: 1.2rem;
+    text-align: center;
+    letter-spacing: 1.5px;
+  }
+
+  &__container {
+    width: 95%;
+
+    padding: 0rem;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &__card {
+      background: #ffffff;
+      width: 300px;
+      height: 320px;
+      min-width: 250px;
+      box-shadow: 5.21625px 4.47107px 5.21625px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      padding: 4rem 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      margin: 2rem;
+      padding: 3rem 1rem;
+
+      h1 {
+        font-size: 18px;
+        color: black;
+      }
+      p {
+        color: rgba(15, 15, 15, 0.6);
+        font-size: 16px;
+        text-align: center;
+        width: 25ch;
+        line-height: 150%;
+      }
+      .button {
+        background: #ffc439;
+        border-radius: 5.21625px;
+        color: white;
+        font-size: 12px;
+        padding: 1rem 2rem;
+        font-weight: 600;
+        cursor: pointer;
+      }
+    }
+  }
+}

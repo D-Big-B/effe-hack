@@ -1,0 +1,81 @@
+.home {
+  width: 100vw;
+  height: 100%;
+  position: relative;
+
+  &__wrapper {
+    width: 100%;
+    height: 90%;
+    background-image: url("./../assets/heoBack.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    position: absolute;
+    top: -10vh;
+    left: 0;
+
+    @include mobile {
+      height: 100%;
+    }
+  }
+
+  &__circle1 {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(180deg, #ffb347 0%, #ffcc33 100%),
+      linear-gradient(58.5deg, #da22ff 20.52%, #9733ee 85.21%),
+      linear-gradient(
+        90deg,
+        #97469e 20.44%,
+        #c146a4 37.08%,
+        #ef489c 53.17%,
+        #ff6a48 70.63%,
+        #f79737 86.18%
+      );
+
+    top: 20%;
+    right: -130px;
+    @include mobile {
+      display: none;
+    }
+  }
+  &__circle2 {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    background: linear-gradient(180deg, #ffb347 0%, #ffcc33 100%),
+      linear-gradient(58.5deg, #da22ff 20.52%, #9733ee 85.21%),
+      linear-gradient(
+        90deg,
+        #97469e 20.44%,
+        #c146a4 37.08%,
+        #ef489c 53.17%,
+        #ff6a48 70.63%,
+        #f79737 86.18%
+      );
+    top: 65%;
+    right: 5%;
+
+    @include mobile {
+      display: none;
+    }
+  }
+  &__rectangle {
+    position: absolute;
+    width: 60%;
+    height: 70%;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+
+    background: #ffc936;
+    border-radius: 12px;
+
+    @include mobile {
+      width: 85%;
+    }
+  }
+}
