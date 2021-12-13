@@ -9,11 +9,15 @@
     @include heading;
     margin: 2rem;
   }
+  &__sub-heading {
+    @include sub-heading;
+    margin: 1rem;
+  }
 
   &__title {
-    width: 40%;
+    width: 30%;
     position: relative;
-    margin-bottom: 4rem;
+    margin-bottom: 6rem;
     display: flex;
     justify-content: center;
     min-width: 280px;
@@ -24,7 +28,7 @@
   }
 
   &__sponsor {
-    width: 90%;
+    width: 95%;
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
@@ -38,7 +42,7 @@
       align-items: center;
       flex-wrap: wrap;
       img {
-        margin: 2rem 1rem;
+        margin: 2rem 1rem 4rem 1rem;
 
         min-width: 220px;
       }

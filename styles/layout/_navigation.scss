@@ -1,6 +1,7 @@
 .header {
   width: 100%;
-  position: fixed;
+  position: relative;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +45,7 @@
       overflow: hidden;
       background: $secondary-color;
       transform: translateY(-100%);
+      // position: relative;
       
       @include transition-ease;
 

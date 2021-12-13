@@ -48,7 +48,7 @@
     justify-content: space-around;
     align-items: center;
     row-gap: 36px;
-    background-color: rgba(0, 0, 0,0.4);
+    background-color: rgba(0, 0, 0,0.6);
     border-radius: 8px;
     backdrop-filter: blur(4px);
 
@@ -58,9 +58,9 @@
       padding: 14px 14px;
       align-content: center;
       justify-items: center;
-      background: linear-gradient(-45deg, #FFB347 0%, #FFCC33 100%);
+      // background: linear-gradient(-45deg, #FFB347 0%, #FFCC33 100%);
       border-radius: 4px;
-      border-right: 4px solid #ffffff;
+      // border-right: 4px solid #ffffff;
       // border-bottom: 2px solid #ffffff;
 
       @include mobile {
@@ -72,8 +72,8 @@
         display: grid;
         width: 200px;
         height: 200px;
-        border-radius: 4px;
-        border-left: 4px solid #ffffff;
+        border-radius: 50%;
+        // border-left: 4px solid #ffffff;
         // border-top: 2px solid #ffffff;
       }
 
@@ -83,11 +83,11 @@
       }
       .surname {
         font-size: 18px;
-        color: $accent-color;
+        color: $secondary-color;
       }
       .designation {
         font-size: 18px;
-        color: $primary-color;
+        color: $secondary-color;
       }
     }
   }

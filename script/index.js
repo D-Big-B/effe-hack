@@ -36,20 +36,6 @@ const toggleItem = (item) => {
   }
 };
 
-
-const navigation_menu = document.getElementsByClassName("header")[0];
-
-window.addEventListener("scroll", (e) => {
-  let scroll = this.scrollY;
-  if (scroll > 20) {
-    navigation_menu.style.background="red"
-    navigation_menu.style.background = "#11111180";
-  } 
-  else {
-    navigation_menu.style.background = "transparent";
-  }
-});
-
 function ScrollToTop() {
   document.body.scrollTop = 0; 
   document.documentElement.scrollTop = 0;

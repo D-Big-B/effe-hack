@@ -204,7 +204,6 @@ body {
 
   &__container {
     width: 95%;
-
     padding: 0rem;
     margin: 3rem auto;
     display: flex;
@@ -219,7 +218,8 @@ body {
       height: 320px;
       min-width: 250px;
       box-shadow: 5.21625px 4.47107px 5.21625px rgba(0, 0, 0, 0.05);
-      border-radius: 20px;
+      border-radius: 4px;
+      border-right: 4px solid #ffc23c;
       padding: 4rem 0;
       display: flex;
       flex-direction: column;
@@ -240,9 +240,9 @@ body {
         line-height: 150%;
       }
       .button {
-        background: #ffc439;
-        border-radius: 5.21625px;
-        color: white;
+        background: #ffc23c;
+        border-radius: 4px;
+        color: #444444;
         font-size: 12px;
         padding: 1rem 2rem;
         font-weight: 600;
