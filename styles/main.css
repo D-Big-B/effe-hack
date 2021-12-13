@@ -595,8 +595,8 @@ header {
 
 @media screen and (max-width: 650px) {
   .home__rectangle__icon {
-    height: 11rem;
-    width: 11rem;
+    height: 26vh;
+    width: 26vh;
     z-index: -1;
     opacity: 0.5;
     right: -10%;
