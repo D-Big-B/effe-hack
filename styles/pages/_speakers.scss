@@ -103,6 +103,7 @@
     position: relative;
     background-image: url("./../assets/brochureContainer.png");
     background-position: right;
+    background-size: contain;
     background-repeat: no-repeat;
     @include mobile {
       background-position: -350px;
