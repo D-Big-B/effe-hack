@@ -1,96 +1,175 @@
-.footer{
-    margin-top: 6rem;
+.footer {
+  margin-top: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #444444;
+  height: 400px;
+
+  @include tablet {
+    height: 350px;
+  }
+
+  @include mobile {
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-between;
+  }
+
+  &__image {
+    margin: 2rem;
     display: flex;
-    width: 100%;
-    background:#444444;
-    padding:3rem 2rem;
-    padding-top: 4rem;
-    gap: 4rem;
-    @include mobile{
-        padding-left: 0;
-      flex-direction: column;
-      align-items:center;  
+    align-items: center;
+    justify-content: center;
+
+    img {
+      @include tablet {
+        width: 200px;
+      }
+      @include mobile {
+        width: 250px;
+      }
     }
-    &__image{
-        height: min-max(14vw,400px);
-        cursor: pointer;
-        img{
-            height: 100%;
-        }
-        @include mobile{
-            margin-left:-50px;
-        }
+  }
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    height: 80%;
+    @include tablet {
+      height: 60%;
+      width: 55%;
     }
-    &__content{
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        &__line{
-            display: flex;
-            align-items: center;
-            gap:16px;
-            img{
-                width: 30px;
-            }
-            a{
-                text-decoration: none;
-                color: $accent-color;
-                font-family: "Jura";
-                font-weight: 500;
-                font-size: 24px;
-                line-height:24px;
-                span{
-                    color: rgba(255,255,255, 0.8);
-                    font-weight: 500;
-                    font-size: 14px;
-                    line-height:14px;
-                }
-            }
-            &__socials{
-                width:100%;
-                display:flex;
-                justify-content: center;
-                gap:36px;
-            }
-        }
-        &__line-3{
-            margin-top:auto;
-        }
+    @include mobile {
+      width: 95%;
+      align-items: center;
     }
-    &__anim{
-        height: 16vw;
-        width: 16vw;
-        border-radius:4px;
-        border: 3px solid #ffffff;
-        overflow: hidden;
-        &__ball{
-          height: 8vw;
-          width: 8vw;
-          margin:0;
-          background:#FFC23C;
-        //   border-radius:50%;
-          position:absolute;
-          animation: footer_anim 10s ease-in-out infinite;
-        }
-        @keyframes footer_anim {
-            0%{
-                top: 0;
-                left: 0;
-            }
-            25%{
-                top: 0;
-                left: 5vw;
-                  border-radius:50%;
-            }
-            50%{
-                top: 5vw;
-                left: 5vw;
-            }
-            75%{
-                top: 5vw;
-                left: 0;
-                  border-radius:50%;
-            }
+    &__line {
+      width: 60%;
+      display: flex;
+      align-items: center;
+
+      a {
+        text-decoration: none;
+      }
+
+      &__text {
+        margin-left: 2rem;
+        color: $accent-color;
+        @include mobile {
+          margin-left: 1rem;
         }
       }
+
+      &__socials {
+        width: 60%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        @include mobile {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
+
+// .footer {
+//   margin-top: 6rem;
+//   display: flex;
+//   width: 100%;
+//   background: #444444;
+//   padding: 3rem 2rem;
+//   padding-top: 4rem;
+//   gap: 4rem;
+//   @include mobile {
+//     padding-left: 0;
+//     flex-direction: column;
+//     align-items: center;
+//   }
+//   &__image {
+//     height: min-max(14vw, 400px);
+//     cursor: pointer;
+//     img {
+//       height: 100%;
+//     }
+//     @include mobile {
+//       margin-left: -50px;
+//     }
+//   }
+//   &__content {
+//     display: flex;
+//     flex-direction: column;
+//     gap: 16px;
+//     &__line {
+//       display: flex;
+//       align-items: center;
+//       gap: 16px;
+//       img {
+//         width: 30px;
+//       }
+//       a {
+//         text-decoration: none;
+//         color: $accent-color;
+//         font-family: "Jura";
+//         font-weight: 500;
+//         font-size: 24px;
+//         line-height: 24px;
+//         span {
+//           color: rgba(255, 255, 255, 0.8);
+//           font-weight: 500;
+//           font-size: 14px;
+//           line-height: 14px;
+//         }
+//       }
+//       &__socials {
+//         width: 100%;
+//         display: flex;
+//         justify-content: center;
+//         gap: 36px;
+//       }
+//     }
+//     &__line-3 {
+//       margin-top: auto;
+//     }
+//   }
+//   &__anim {
+//     height: 16vw;
+//     width: 16vw;
+//     border-radius: 4px;
+//     border: 3px solid #ffffff;
+//     overflow: hidden;
+//     &__ball {
+//       height: 8vw;
+//       width: 8vw;
+//       margin: 0;
+//       background: #ffc23c;
+//       position: absolute;
+//       animation: footer_anim 10s ease-in-out infinite;
+//     }
+//     @keyframes footer_anim {
+//       0% {
+//         top: 0;
+//         left: 0;
+//       }
+//       25% {
+//         top: 0;
+//         left: 5vw;
+//         border-radius: 50%;
+//       }
+//       50% {
+//         top: 5vw;
+//         left: 5vw;
+//       }
+//       75% {
+//         top: 5vw;
+//         left: 0;
+//         border-radius: 50%;
+//       }
+//     }
+//   }
+// }
