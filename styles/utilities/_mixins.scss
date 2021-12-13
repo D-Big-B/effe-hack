@@ -9,6 +9,10 @@
   transition: all 0.8s ease;
 }
 
+@mixin transition-ease-in-out {
+  transition: all 0.8s ease-in-out;
+}
+
 @mixin mobile {
   @media screen and (max-width: 650px) {
     @content;
@@ -23,9 +27,9 @@
 
 @mixin heading {
   font-size: 64px;
-  text-shadow: 2px 0px 2px white;
+  text-shadow: 1.7px 0.7px 0px $primary-color, 2px 1px 0px white;
   text-align: center;
-  margin: 0rem 1rem;
+  margin: 1rem 1rem;
 
   width: 100%;
   @include mobile {

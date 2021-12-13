@@ -4,7 +4,7 @@
   align-items: center;
 
   &__heading {/*=============== GOOGLE FONTS ===============*/
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Jura&display=swap");
 /*=============== VARIABLES CSS ===============*/
 :root {
   /*========== Colors ==========*/
@@ -95,7 +95,7 @@ body {
 
 .accordion__item {
   box-shadow: 0 2px 6px rgba(38, 38, 38, 0.1);
-  background-color: var(--container-color);
+  background-color: #222222;
   border-radius: .25rem;
   position: relative;
   transition: all .25s ease;

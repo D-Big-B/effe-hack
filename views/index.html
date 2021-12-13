@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Effervescence</title>
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Out of Context - The Design Hackathon. An Event hosted by Effervescence, annual cultural fest of IIIT Allahabad "
+    />
+    <title>Out of Context - The Design Hackathon</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/Logo.png" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -48,6 +56,7 @@
         </nav>
       </div>
     </header>
+    <a id="top"></a>
     <main class="main">
       <section id="home" class="home">
         <div class="home__wrapper"></div>
@@ -100,7 +109,7 @@
           class="mentors__orange"
           alt=""
         />
-        <img src="./../assets/mentorWhite.png" class="mentors__white" alt="" />
+        <img src="./../assets/mentorWhite.svg" class="mentors__white" alt="" />
         <div class="mentors__heading">Mentors and Judges</div>
         <div class="mentors__container"></div>
       </section>
@@ -177,6 +186,32 @@
           </div>
         </div>
         <div class="speakers__brochure">
+          <svg
+            class="speakers__brochure__img"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <circle
+              id="Ellipse_3201"
+              cx="95.5513"
+              cy="100.408"
+              r="89.1069"
+              fill="#FFB645"
+            />
+            <circle
+              class="Ellipse_3202"
+              cx="95.9558"
+              cy="99.9998"
+              r="94.0476"
+              stroke-width="2.38095"
+              stroke-dasharray="4.76 4.76"
+            />
+            <path
+              id="Subtract"
+              d="M1447.78 200V3.06951e-05L95.5596 0C150.788 2.74267e-05 195.559 44.7715 195.559 100C195.559 155.191 150.848 199.94 95.671 200L1447.78 200Z"
+              fill="#444444"
+            />
+          </svg>
           <div class="speakers__brochure__content">
             <p>Want to Sponsor Out of Context?</p>
             <p>Shoot Us an E-mail at effervescence@iiita.ac.in</p>
@@ -217,7 +252,62 @@
         <div class="accordion__container"></div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="footer">
+        <div class="footer__image">
+          <img
+            src="../assets/outOfContext.svg"
+            alt="Logo"
+            onclick="ScrollToTop()"
+          />
+        </div>
+        <div class="footer__content">
+          <div class="footer__content__line footer__content__line-1">
+            <img src="./../assets/mail.svg" />
+            <a
+              class="footer__content__line_text"
+              href="mailto:effervescence@iiita.ac.in"
+              >effervescence@iiita.ac.in</a
+            >
+          </div>
+          <div class="footer__content__line footer__content__line-2">
+            <img src="./../assets/loc_pin.svg" />
+            <a
+              class="footer__content__line_text"
+              href="https://goo.gl/maps/j3KWdckVHzrxffyN6"
+              >IIIT Allahabad<br /><span
+                >Prayagraj, Uttar Pradesh | 211012</span
+              ></a
+            >
+          </div>
+          <div class="footer__content__line footer__content__line-3">
+            <div class="footer__content__line__socials">
+              <a
+                class="footer__content__line__socials__social-1"
+                href="https://www.instagram.com/goeffervescence/"
+                target="_blank"
+                ><img src="./../assets/instagram.svg" alt="Insta"
+              /></a>
+              <a
+                class="footer__content__line__socials__social-2"
+                href="https://www.facebook.com/effervescence.iiita"
+                target="_blank"
+                ><img src="./../assets/facebook.svg" alt="FB"
+              /></a>
+              <a
+                class="footer__content__line__socials__social-3"
+                href="https://www.youtube.com/c/effervescenceiiitald"
+                target="_blank"
+                ><img src="./../assets/youtube.svg" alt="YT"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="footer__anim">
+          <p class="footer__anim__ball"></p>
+        </div> -->
+      </div>
+    </footer>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./.././script/swipper.js"></script>
     <script src="./../script/menu.js"></script>
