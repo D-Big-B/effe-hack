@@ -697,6 +697,14 @@ header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -710,6 +718,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 650px) {
+  .home__rectangle__buttons > div {
+    width: 80%;
+  }
 }
 
 .home__rectangle__buttons > div img {
@@ -738,6 +752,7 @@ header {
 
 .home__rectangle__buttons__button-1 {
   background: #3770FF;
+  border: 2px solid #3770FF;
   color: #ffffff;
 }
 
