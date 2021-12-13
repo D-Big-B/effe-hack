@@ -106,6 +106,7 @@
     background-size: contain;
     background-repeat: no-repeat;
     @include mobile {
+      background-size: cover;
       background-position: -350px;
     }
     &__content {
@@ -120,7 +121,7 @@
       right: 15%;
 
       @include mobile {
-        align-items: flex-start;
+        align-items: flex-end;
       }
 
       color: $accent-color;
