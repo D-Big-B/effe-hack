@@ -1507,6 +1507,8 @@ header {
 }
 
 .speakers__brochure__content .button {
+  text-decoration: none;
+  color: #ffffff;
   margin-top: 1.6rem;
   border: 2px solid #ffc23c;
   padding: 1rem 2rem;
