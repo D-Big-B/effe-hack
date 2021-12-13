@@ -39,6 +39,12 @@
       border-radius: 4px;
       display: grid;
       place-items: center;
+      @include mobile{
+        height: 225px;
+        width: 225px;
+        right: -10%;
+        top:5%;
+      }
       img{
         height: 90%;
         width: 90%;
@@ -58,8 +64,9 @@
       margin-left: 5rem;
 
       @include mobile{
-        width: 85%;
-        margin-top: 30%;
+        margin: 0 auto;
+        width: 90%;
+        margin-top: 50%;
         font-size: 14px;
       }
       &>p{
@@ -80,6 +87,9 @@
           font-weight: 500;
           margin: 0 16px;
           color: $secondary-color;
+          @include mobile{
+
+          }
         }
         .date__from{
           margin-top:-24px;
@@ -98,7 +108,8 @@
       gap: 8vw;
 
       @include mobile {
-        width: 85%;
+        margin: auto auto 2rem auto;
+        width: 90%;
         justify-content: space-between;
       }
 
@@ -125,12 +136,13 @@
         }
       }
       &__button-1{
-        border:2px solid#3770FF;
-        color:#3770FF;
+        background: #3770FF;
+        // border:2px solid#3770FF;
+        color:#ffffff;
       }
       &__button-2{
-        border:2px solid #7289DA;
-        color:#7289DA;
+        border:2px solid #ffffff;
+        color:#ffffff;
       }
     }
   }
