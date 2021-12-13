@@ -724,7 +724,7 @@ header {
 
 @media screen and (max-width: 650px) {
   .home__rectangle__buttons {
-    margin: 2rem auto 5rem auto;
+    margin: 2rem auto 2rem auto;
     width: 90%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
