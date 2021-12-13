@@ -40,8 +40,8 @@
       display: grid;
       place-items: center;
       @include mobile{
-        height: 225px;
-        width: 225px;
+        height: 15rem;
+        width: 15rem;
         right: -10%;
         top:5%;
       }
@@ -64,10 +64,10 @@
       margin-left: 5rem;
 
       @include mobile{
-        margin: 0 auto;
+        margin:auto;
+        margin-bottom: 0rem;
         width: 90%;
-        margin-top: 50%;
-        font-size: 14px;
+        font-size: 16px;
       }
       &>p{
         margin: auto auto 2rem auto ;
@@ -80,6 +80,7 @@
         align-items: center;
         vertical-align: middle;
         @include mobile{
+          padding-top: 2rem;
           font-size: 12px;
         }
         span{
@@ -87,9 +88,6 @@
           font-weight: 500;
           margin: 0 16px;
           color: $secondary-color;
-          @include mobile{
-
-          }
         }
         .date__from{
           margin-top:-24px;
@@ -101,14 +99,14 @@
       }
     }
     &__buttons{
-      margin: auto 0rem 2rem 5rem; 
+      margin: 8rem 0rem 2rem 5rem; 
       width: 40%;
       display: flex;
       justify-content: center;
       gap: 8vw;
 
       @include mobile {
-        margin: auto auto 2rem auto;
+        margin: 2rem auto 2rem auto;
         width: 90%;
         justify-content: space-between;
       }
@@ -131,6 +129,7 @@
           font-size: 13px;
           font-weight:600;
           @include mobile{
+            font-weight: 500;
             font-size: 12px;
           }
         }
@@ -158,5 +157,8 @@
     transform:rotate(180deg);
     background-size: contain;
     background-repeat: no-repeat;
+    @include tablet{
+      display: none;
+    }
   }
 }
