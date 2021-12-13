@@ -1,7 +1,11 @@
 .header {
   width: 100%;
   position: relative;
-
+  @include mobile {
+    position: fixed;
+    background: #22222295;
+    backdrop-filter: blur(4px);
+  }
   display: flex;
   justify-content: space-between;
   align-items: center;
