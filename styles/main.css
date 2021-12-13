@@ -595,8 +595,10 @@ header {
 
 @media screen and (max-width: 650px) {
   .home__rectangle__icon {
-    height: 15rem;
-    width: 15rem;
+    height: 26vh;
+    width: 26vh;
+    z-index: -1;
+    opacity: 0.5;
     right: -10%;
     top: 5%;
   }
@@ -606,6 +608,7 @@ header {
   height: 90%;
   width: 90%;
   margin-left: -10px;
+  opacity: 0.5;
 }
 
 .home__rectangle__content {
@@ -624,6 +627,7 @@ header {
       -ms-flex-direction: column;
           flex-direction: column;
   margin-left: 5rem;
+  z-index: 1;
 }
 
 @media screen and (max-width: 650px) {
@@ -688,11 +692,19 @@ header {
 
 @media screen and (max-width: 650px) {
   .home__rectangle__buttons {
-    margin: 2rem auto 2rem auto;
+    margin: 2rem auto 5rem auto;
     width: 90%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -706,6 +718,12 @@ header {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 4px;
+}
+
+@media screen and (max-width: 650px) {
+  .home__rectangle__buttons > div {
+    width: 80%;
+  }
 }
 
 .home__rectangle__buttons > div img {
@@ -734,6 +752,7 @@ header {
 
 .home__rectangle__buttons__button-1 {
   background: #3770FF;
+  border: 2px solid #3770FF;
   color: #ffffff;
 }
 
@@ -1413,6 +1432,7 @@ header {
   font-weight: 500;
   margin: 10px 0;
   font-size: 20px;
+  text-align: right;
 }
 
 @media screen and (max-width: 650px) {
