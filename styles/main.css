@@ -1339,6 +1339,7 @@ header {
 
 @media screen and (max-width: 650px) {
   .speakers__brochure {
+    background-size: cover;
     background-position: -350px;
   }
 }
@@ -1367,9 +1368,9 @@ header {
 
 @media screen and (max-width: 650px) {
   .speakers__brochure__content {
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
   }
 }
 
