@@ -2,35 +2,30 @@ const accordionContainer = document.querySelector(".accordion__container");
 
 const faqs = [
   {
-    question: "mein wada krke bhul jata hun 🤣🤣🤣🤣",
+    question: "Why participate in the design hackathon?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, doloremque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, exercitationem!",
+      "Hackathons provide a great opportunity to learn problem solving skills in a time restricted environment. Design hackathon would provide a great opportunity to both experienced as well newbie designers to explore and showcase their design skills while learning lot of new things along the way.",
   },
 
   {
-    question: "what is html",
+    question: "What is the team-size for the hackathon?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, doloremque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, exercitationem!",
+      "The team size can range from 2-4 members. Hackathons also provide a great team building experience.",
   },
   {
-    question: "what is css",
+    question: "What is the duration of the Hackathon?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, doloremque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, exercitationem!",
+      "It is a 36 hour hackathon starting from 00:00 Hours on 23nd December 2021 and ends at 12:00 Hours on 24th December 2021",
   },
   {
-    question: "what is js",
+    question: "What if I have never been to any hackathon before?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, doloremque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, exercitationem!",
+      "Then we're so glad this will be your first ever! It’s helpful to have some prior design experience, but it’s not a requirement. We’ll have talks, mentors and workshops to help you with your project.",
   },
   {
-    question: "what is designer",
+    question: "Are there going to be themes for the hackthon?",
     answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, doloremque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, exercitationem!",
-  },
-  {
-    question: "what is figma",
-    answer:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, doloremque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, exercitationem!",
+      "We will be releasing the theme and the problem statement at the beginning of the hack and the problem has to be solved and designed within the limited time frame",
   },
 ];
 
