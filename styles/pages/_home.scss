@@ -71,7 +71,7 @@
         margin:auto;
         margin-bottom: 0rem;
         width: 90%;
-        font-size: 16px;
+        font-size: 1.8vh;
       }
       &>p{
         margin: auto auto 2rem auto ;
@@ -85,13 +85,16 @@
         vertical-align: middle;
         @include mobile{
           padding-top: 2rem;
-          font-size: 12px;
+          font-size: 1.6vh;
         }
         span{
           font-size: 36px;
           font-weight: 500;
           margin: 0 16px;
           color: $secondary-color;
+          @include mobile{
+            font-size: 3.4vh;
+          }
         }
         .date__from{
           margin-top:-24px;
@@ -103,7 +106,7 @@
       }
     }
     &__buttons{
-      margin: 8rem 0rem 2rem 5rem; 
+      margin: 2rem 0rem 2rem 5rem; 
       width: 40%;
       display: flex;
       justify-content: center;
@@ -118,12 +121,13 @@
         align-items:center;
       }
 
-      &>div{
+      &>a{
         display: flex;
         gap: 8px;
         padding: 10px 20px;
         align-items: center;
         border-radius: 4px;
+        text-decoration: none;
         @include mobile{
           width: 80%;
         }

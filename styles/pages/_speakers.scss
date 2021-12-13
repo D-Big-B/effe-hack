@@ -11,11 +11,32 @@
 
   &__speaker {
     width: 90%;
+    // height: 300px;
     margin: 2rem auto 5rem auto;
     display: flex;
     align-items: center;
     justify-content: center;
+    position: relative;
 
+    &__coming-soon{
+      height: 100%;
+      width: 100%;
+      background: rgba(255, 255, 255,0.4);
+      backdrop-filter: blur(6px);
+      color: #222222;
+      display:grid;
+      place-items: center;
+      position:absolute;
+      top: -2rem;
+      left: 0;
+      z-index: 2;
+      font-size: 3rem;
+      border-radius: 8px;
+      padding: 4rem 0;
+      @include mobile{
+        font-size: 2rem;
+      }
+    }
     .slide__wrapper {
       display: flex;
       justify-content: center;
