@@ -117,30 +117,74 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../script/faq.js":[function(require,module,exports) {
-var accordionContainer = document.querySelector(".accordion__container");
-var faqs = [{
-  question: "Why participate in the design hackathon?",
-  answer: "Hackathons provide a great opportunity to learn problem solving skills in a time restricted environment. Design hackathon would provide a great opportunity to both experienced as well newbie designers to explore and showcase their design skills while learning lot of new things along the way."
-}, {
-  question: "What is the team-size for the hackathon?",
-  answer: "The team size can range from 2-4 members. Hackathons also provide a great team building experience."
-}, {
-  question: "What is the duration of the Hackathon?",
-  answer: "It is a 36 hour hackathon starting from 00:00 Hours on 23nd December 2021 and ends at 12:00 Hours on 24th December 2021"
-}, {
-  question: "What if I have never been to any hackathon before?",
-  answer: "Then we're so glad this will be your first ever! It’s helpful to have some prior design experience, but it’s not a requirement. We’ll have talks, mentors and workshops to help you with your project."
-}, {
-  question: "Are there going to be themes for the hackthon?",
-  answer: "We will be releasing the theme and the problem statement at the beginning of the hack and the problem has to be solved and designed within the limited time frame"
-}];
+})({"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
 
-for (var _i = 0, _faqs = faqs; _i < _faqs.length; _i++) {
-  var faq = _faqs[_i];
-  accordionContainer.innerHTML += "\n     <div class=\"accordion__item\">\n            <header class=\"accordion__header\">\n              <i class=\"bx bx-plus accordion__icon\"></i>\n              <h3 class=\"accordion__title\">".concat(faq.question, "</h3>\n            </header>\n\n            <div class=\"accordion__content\">\n              <p class=\"accordion__description\">\n                ").concat(faq.answer, "\n              </p>\n            </div>\n          </div>\n\n     ");
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+
+  return bundleURL;
 }
-},{}],"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -344,5 +388,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","../script/faq.js"], null)
-//# sourceMappingURL=/faq.7e556a77.js.map
+},{}]},{},["../../../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/index.js.map

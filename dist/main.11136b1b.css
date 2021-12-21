@@ -720,6 +720,9 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 8vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (max-width: 650px) {
@@ -784,7 +787,7 @@ header {
 }
 
 .home__rectangle__buttons__button-1 {
-  background: #3770FF;
+  background: #3770ff;
   border: 2px solid #3770FF;
   color: #ffffff;
 }
@@ -1645,20 +1648,34 @@ header {
 }
 
 .sponsors__title {
-  width: 30%;
+  width: 80%;
   position: relative;
   margin-bottom: 6rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   min-width: 280px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .sponsors__title img {
-  width: 100%;
+  width: 550px;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 900px) {
+  .sponsors__title img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .sponsors__title img {
+    width: 300px;
+  }
 }
 
 .sponsors__sponsor {

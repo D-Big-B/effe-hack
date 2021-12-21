@@ -60,6 +60,7 @@
     />
   </head>
   <body>
+  </div>
     <header>
       <div class="header">
         <a target="_blank" href="http://effe.org.in">
@@ -116,16 +117,14 @@
             </p>
           </div>
           <div class="home__rectangle__buttons">
+            <div
+              class="apply-button"
+              data-hackathon-slug="out-of-context"
+              data-button-theme="dark-inverted"
+              style="height: 44px; width: 312px"
+            ></div>
             <a
-              class="home__rectangle__buttons__button-1"
-              href="https://out-of-context.devfolio.co/"
-              target="_blank"
-            >
-              <img src="./../assets/Devfolio_w_icon.svg" />
-              <p>Apply on Devfolio</p>
-            </a>
-            <a
-              class="home__rectangle__buttons__button-2"
+              class="home__rectangle__buttons__button-2 "
               href="https://discord.com/invite/Rkzf9tTg"
               target="_blank"
             >
@@ -266,20 +265,33 @@
         </div>
       </section>
       <section id="sponsors" class="sponsors">
-        <div class="sponsors__heading">Title Sponsor</div>
+        <div class="sponsors__heading">Title Sponsors</div>
         <div class="sponsors__title">
-          <img src="./../assets/devfolio.png" alt="" />
+          <a href="https://devfolio.co/" target="_blank">
+
+            <img src="./../assets/devfolio.png" alt="" />
+          </a>
+          <a href="https://polygon.technology/" target="_blank">
+
+            <img src="./../assets/polygon-logo-monotone-white.png" alt="" />
+          </a>
         </div>
 
         <div class="sponsors__sub-heading">Sponsors</div>
         <div class="sponsors__sponsor">
-          <div class="fline">
-            <img src="./../assets/polygon.png" alt="" />
-          </div>
           <div class="sline">
-            <img src="./../assets/tezos.png" alt="" />
-            <img src="./../assets/fileCoin.png" alt="" />
-            <img src="./../assets/celo.png" alt="" />
+           <a href="https://tezos.com/" target="_blank">
+
+             <img src="./../assets/tezos.png" alt="" />
+           </a>
+            <a href="https://filecoin.io/" target="_blank">
+
+              <img src="./../assets/fileCoin.png" alt="" />
+            </a>
+             <a href="https://celo.org/"target="_blank">
+
+               <img src="./../assets/celo.png" alt="" />
+             </a>
           </div>
           <div class="tline">
             <img src="./../assets/noticebard.png" alt="" />
@@ -313,6 +325,7 @@
             <a
               class="footer__content__line__text"
               href="mailto:effervescence@iiita.ac.in"
+              target="_blank"
               >effervescence@iiita.ac.in</a
             >
           </div>
@@ -321,6 +334,7 @@
             <a
               class="footer__content__line__text"
               href="https://goo.gl/maps/j3KWdckVHzrxffyN6"
+              target="_blank"
               >IIIT Allahabad<br />
               <p>Prayagraj, Uttar Pradesh | 211012</p></a
             >
@@ -362,6 +376,8 @@
     <script src="./../script/mentors.js"></script>
     <script src="./../script/faq.js"></script>
     <script src="./.././script/index.js"></script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+
   </body>
 </html>
 <!-- 

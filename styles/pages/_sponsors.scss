@@ -15,15 +15,23 @@
   }
 
   &__title {
-    width: 30%;
+    width: 80%;
     position: relative;
     margin-bottom: 6rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     min-width: 280px;
+    flex-wrap: wrap;
 
     img {
-      width: 100%;
+      width: 550px;
+      margin: 2rem;
+      @include tablet {
+        width: 400px;
+      }
+      @include mobile {
+        width: 300px;
+      }
     }
   }
 
