@@ -109,7 +109,7 @@
       width: 40%;
       display: flex;
       justify-content: center;
-      gap: 8vw;
+      gap: 7vw;
       align-items: center;
 
       @include mobile {
@@ -150,9 +150,9 @@
         }
       }
       &__button-1 {
-        background: #3770ff;
-        border: 2px solid#3770FF;
-        color: #ffffff;
+        background: #ffffff;
+        border: 2px solid#ffffff;
+        color: #273339;
       }
       &__button-2 {
         border: 2px solid #ffffff;
