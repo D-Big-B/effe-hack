@@ -719,7 +719,7 @@ header {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 8vw;
+  gap: 7vw;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -788,9 +788,9 @@ header {
 }
 
 .home__rectangle__buttons__button-1 {
-  background: #3770ff;
-  border: 2px solid #3770FF;
-  color: #ffffff;
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  color: #273339;
 }
 
 .home__rectangle__buttons__button-2 {
@@ -1710,11 +1710,13 @@ header {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 .sponsors__sponsor .fline img {
   margin: 2rem 1rem 4rem 1rem;
-  min-width: 220px;
+  width: 180px;
 }
 
 .sponsors__sponsor .sline {
@@ -1733,7 +1735,7 @@ header {
 
 .sponsors__sponsor .sline img {
   margin: 2rem 1rem;
-  min-width: 220px;
+  width: 240px;
 }
 
 .sponsors__sponsor .tline {
@@ -1752,6 +1754,100 @@ header {
 
 .sponsors__sponsor .tline img {
   margin: 2rem 1rem;
-  min-width: 220px;
+  width: 180px;
+}
+
+.timeline {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+.timeline__heading {
+  font-size: 64px;
+  text-shadow: 1.7px 0.7px 0px #222222, 2px 1px 0px white;
+  text-align: center;
+  margin: 1rem 1rem;
+  width: 100%;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 650px) {
+  .timeline__heading {
+    font-size: 36px;
+  }
+}
+
+.timeline__img {
+  width: 70%;
+  padding: 5vw 0 10vw 0;
+}
+
+.timeline__img img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .timeline__img {
+    width: 90%;
+  }
+}
+
+.prizes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow-x: hidden;
+}
+
+.prizes__heading {
+  font-size: 64px;
+  text-shadow: 1.7px 0.7px 0px #222222, 2px 1px 0px white;
+  text-align: center;
+  margin: 1rem 1rem;
+  width: 100%;
+  margin: 2rem;
+}
+
+@media screen and (max-width: 650px) {
+  .prizes__heading {
+    font-size: 36px;
+  }
+}
+
+.prizes__img {
+  width: 70%;
+  padding: 0 0 8vw 0;
+}
+
+.prizes__img img {
+  width: 100%;
+  height: auto;
+}
+
+@media screen and (max-width: 650px) {
+  .prizes__img {
+    width: 90%;
+  }
 }
 /*# sourceMappingURL=main.css.map */
